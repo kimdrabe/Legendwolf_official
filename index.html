@@ -114,17 +114,15 @@
       z-index: 2;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: center;
       margin-top: 1rem;
-      padding: 0.7rem 2rem;
+      width: 54px;
+      height: 54px;
       border: 1.5px solid rgba(255, 69, 0, 0.4);
-      border-radius: 50px;
+      border-radius: 50%;
       background: rgba(255, 69, 0, 0.08);
       color: #ff6b2b;
-      font-size: 0.95rem;
-      font-weight: 600;
       text-decoration: none;
-      letter-spacing: 0.05em;
       transition: all 0.3s ease;
       backdrop-filter: blur(4px);
     }
@@ -133,7 +131,7 @@
       background: rgba(255, 69, 0, 0.2);
       border-color: #ff4500;
       box-shadow: 0 0 25px rgba(255, 69, 0, 0.25);
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
 
     .glow-dots {
@@ -231,7 +229,13 @@
     <div class="particles" id="particles"></div>
     <h1 class="title">Legendwolf_official</h1>
     <p class="subtitle" id="countdown"></p>
-    <a class="insta-btn" href="https://instagram.com/official_legendwolf" target="_blank" rel="noopener noreferrer">@official_legendwolf</a>
+    <a class="insta-btn" href="https://instagram.com/official_legendwolf" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/>
+      </svg>
+    </a>
     <div class="accent-line"></div>
     <div class="footer">Legendwolf_official &mdash; 2025</div>
   </section>
