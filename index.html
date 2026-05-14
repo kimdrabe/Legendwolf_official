@@ -234,7 +234,6 @@
     </div>
     <div class="particles" id="particles"></div>
     <h1 class="title">Legendwolf_official</h1>
-    <p class="subtitle" id="countdown"></p>
     <div class="social-links">
       <a class="soc-btn" href="https://instagram.com/official_legendwolf" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
@@ -268,19 +267,6 @@
       container.appendChild(p);
     }
 
-    const totalSeconds = 3600;
-    let remaining = totalSeconds;
-
-    function updateCountdown() {
-      const m = Math.floor(remaining / 60);
-      const s = remaining % 60;
-      document.getElementById('countdown').textContent =
-        `⚡ ${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')} ⚡`;
-      if (remaining > 0) remaining--;
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
