@@ -248,28 +248,44 @@
       <div class="glow-dot"></div>
     </div>
     <div class="particles" id="particles"></div>
-    <svg class="wolf-silhouette" viewBox="0 0 400 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="wolf-silhouette" viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="wolfGrad" x1="0" y1="0" x2="400" y2="380" gradientUnits="userSpaceOnUse">
+        <linearGradient id="wolfGrad" x1="0" y1="0" x2="400" y2="340" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stop-color="#ff0000"/>
-          <stop offset="50%" stop-color="#ff4500"/>
+          <stop offset="45%" stop-color="#ff4500"/>
           <stop offset="100%" stop-color="#ff8c00"/>
         </linearGradient>
+        <filter id="wolfGlow">
+          <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ff4500" flood-opacity="0.5"/>
+        </filter>
       </defs>
-      <g stroke="url(#wolfGrad)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <ellipse cx="200" cy="195" rx="85" ry="75" stroke-width="3"/>
-        <polygon points="125,145 140,55 170,125" stroke-width="3"/>
-        <polygon points="275,145 260,55 230,125" stroke-width="3"/>
-        <ellipse cx="200" cy="250" rx="38" ry="45" stroke-width="3"/>
-        <path d="M155 220 L165 215" stroke-width="4"/>
-        <path d="M245 220 L235 215" stroke-width="4"/>
-        <path d="M185 252 L200 265 L215 252" stroke-width="3.5"/>
-        <path d="M180 272 Q200 285 220 272" stroke-width="2.5"/>
-        <path d="M150 160 Q180 145 200 145 Q220 145 250 160" stroke-width="2.5"/>
-        <path d="M105 195 Q95 185 90 170 Q85 155 90 145" stroke-width="2.5"/>
-        <path d="M295 195 Q305 185 310 170 Q315 155 310 145" stroke-width="2.5"/>
-        <path d="M130 280 Q160 310 200 315 Q240 310 270 280" stroke-width="2.5"/>
-      </g>
+      <path d="
+        M 85 90
+        C 95 88, 105 88, 115 90
+        C 130 92, 145 88, 160 84
+        Q 170 82, 178 86
+        L 185 60
+        Q 192 82, 200 92
+        Q 210 100, 218 115
+        C 225 130, 235 155, 250 175
+        Q 260 190, 275 200
+        Q 295 210, 320 205
+        L 345 200
+        Q 358 208, 340 225
+        Q 330 240, 320 255
+        Q 310 270, 295 278
+        Q 270 288, 235 290
+        Q 200 292, 175 288
+        Q 155 282, 148 268
+        Q 142 250, 138 230
+        Q 133 205, 125 180
+        Q 118 160, 112 145
+        Q 105 130, 98 120
+        Q 92 112, 88 108
+        Q 82 102, 85 90Z
+      " fill="url(#wolfGrad)" filter="url(#wolfGlow)"/>
+      <path d="M 95 105 Q 105 112 115 108" stroke="#0a0a0a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="130" cy="110" r="4" fill="#0a0a0a"/>
     </svg>
     <h1 class="title">Legendwolf_official</h1>
     <div class="social-links">
