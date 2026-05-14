@@ -203,7 +203,7 @@
     </div>
     <div class="particles" id="particles"></div>
     <h1 class="title">Legendwolf_official</h1>
-    <p class="subtitle">⚡ Coming Soon ⚡</p>
+    <p class="subtitle" id="countdown"></p>
     <div class="accent-line"></div>
     <div class="footer">Legendwolf_official &mdash; 2025</div>
   </section>
@@ -220,6 +220,20 @@
       p.style.background = ['#ff0000', '#ff4500', '#ff8c00'][Math.floor(Math.random() * 3)];
       container.appendChild(p);
     }
+
+    const totalSeconds = 3600;
+    let remaining = totalSeconds;
+
+    function updateCountdown() {
+      const m = Math.floor(remaining / 60);
+      const s = remaining % 60;
+      document.getElementById('countdown').textContent =
+        `⚡ ${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')} ⚡`;
+      if (remaining > 0) remaining--;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
